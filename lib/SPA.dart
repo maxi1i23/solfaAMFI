@@ -12,11 +12,20 @@ class PageSPA extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _buildPdfButton(context, "Document 1", "assets/pdf/doc1.pdf"),
             const SizedBox(height: 12),
-            _buildPdfButton(context, "Document 2", "assets/pdf/doc2.pdf"),
+            _buildPdfButton(context, "1: Aminao ny hery", "assets/pdf/aminaotanora.pdf"),
             const SizedBox(height: 12),
-            _buildPdfButton(context, "Document 3", "assets/pdf/doc3.pdf"),
+            _buildPdfButton(context, "2: Fiainam-baovao", "assets/pdf/fiainambaovao.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "3: Fianarana ho an'ny mino", "assets/pdf/fianarana.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "4: Mitafia ny mazava", "assets/pdf/mitafia.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "5: Tanora o, ny nosindrazanao", "assets/pdf/tanoratanindrazanao.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "6: Tena aina", "assets/pdf/tenaaina.pdf"),
+            const SizedBox(height: 12),
+
           ],
         ),
       ),

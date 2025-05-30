@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
           menuItem(1, "STK AMFI", Icons.notes,
                currentPage == DrawerSections.STK_AMFI ? true : false),
 
-          menuItem(2, "STK SPAA 11", Icons.event,
+          menuItem(2, "STK SP", Icons.event,
               currentPage == DrawerSections.STK_SPAA_11 ? true : false),
 
           menuItem(3, "AUTRES",Icons.dashboard,

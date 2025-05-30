@@ -11,7 +11,7 @@ class PdfViewerPage extends StatelessWidget {  // PdfViewerPage (P majuscule, d 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+     // appBar: AppBar(title: Text(title)),
       body: SfPdfViewer.asset(pdfPath),
     );
   }

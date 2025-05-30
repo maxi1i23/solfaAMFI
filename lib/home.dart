@@ -40,7 +40,7 @@ class Pagehome extends StatelessWidget {
               destinationPage: PageSTKAMFI(),
             ),
             ReusableButton(
-              text: "STK SPAA 11",
+              text: "STK SP",
               destinationPage: PageSPA(),
             ),
             ReusableButton(
@@ -134,7 +134,7 @@ class ReusableButton extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'Georgia', // tu peux mettre une autre police ici si tu veux
+                      fontFamily: 'Georgia',
                       color: Colors.black,
                     ),
                   ),

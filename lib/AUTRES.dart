@@ -12,11 +12,12 @@ class PageAUTRE extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _buildPdfButton(context, "Document 1", "assets/pdf/doc1.pdf"),
             const SizedBox(height: 12),
-            _buildPdfButton(context, "Document 2", "assets/pdf/doc2.pdf"),
+            _buildPdfButton(context, "1: Azo antoka", "assets/pdf/azoantoka.pdf"),
             const SizedBox(height: 12),
-            _buildPdfButton(context, "Document 3", "assets/pdf/doc3.pdf"),
+            _buildPdfButton(context, "2: Manaiky aho", "assets/pdf/manaiky.pdf"),
+            const SizedBox(height: 12),
+
           ],
         ),
       ),
@@ -44,7 +45,7 @@ class PageAUTRE extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             color: Colors.white,
             border: Border(
-              bottom: BorderSide(color: Colors.blueGrey.shade300, width: 1.5),
+              bottom: BorderSide(color: Colors.red.shade300, width: 1.5),
             ),
           ),
           child: Row(

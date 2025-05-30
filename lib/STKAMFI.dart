@@ -12,7 +12,7 @@ class PageSTKAMFI extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _buildPdfButton(context, "Document 1", "assets/pdf/doc1.pdf"),
+            _buildPdfButton(context, "1: Fihavanana", "assets/pdf/fihavanana.pdf"),
             const SizedBox(height: 12),
             _buildPdfButton(context, "Document 2", "assets/pdf/doc2.pdf"),
             const SizedBox(height: 12),
