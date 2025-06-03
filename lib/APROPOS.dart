@@ -7,11 +7,7 @@ class PageAPROPOS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar (
-        title: const
-        Text("À PROPOS"),
-        backgroundColor: Colors.red,
-      ),
+
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -21,7 +17,7 @@ class PageAPROPOS extends StatelessWidget {
             const SizedBox(height: 10),
             _buildMainSection(),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             _buildParastk(),
             _buildParastk1(),
 
@@ -47,7 +43,6 @@ class PageAPROPOS extends StatelessWidget {
 
             const Divider(height: 40, thickness: 1),
 
-            const SizedBox(height: 20),
             const Center(
               child: Text(
                 "©-2025 by miandry",
@@ -65,14 +60,15 @@ class PageAPROPOS extends StatelessWidget {
   Widget _buildTitle(String title) {
     return Row(
       children: [
-        const Icon(Icons.double_arrow, color: Colors.red),
+        const Icon(Icons.double_arrow, color: Colors.amber),
         const SizedBox(width: 6),
         Text(
           title,
           style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.red,
+
+            color: Colors.amber,
           ),
         ),
       ],
@@ -82,56 +78,57 @@ class PageAPROPOS extends StatelessWidget {
 // stk
 
   Widget _buildMainSection() {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // Colonne texte
-        Expanded(
-          flex: 2,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Text(
-                " - Ny Sampana Tanora Kristianina Ambohitsoa Fibebahana dia ...........;; ",
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 8),
-              Text(
-                " - Niforina tamin'ny taona.....",
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 8),
-              Text(
-                " - Misy sokajin'asa maro toy ny Hira, Vakodrazana, Fanatanjaha tena",
-                style: TextStyle(fontSize: 16),
-              ),
+
+
+
+        // Image avec bordure stylée (non arrondie)
+        Container(
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.lightBlueAccent,
+              width: 4,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black26,
+                blurRadius: 8,
+                offset: Offset(4, 4),
+              )
             ],
-
           ),
-        ),
-        const SizedBox(width: 16),
-
-        // Colonne image
-        ClipRRect(
-          borderRadius: BorderRadius.circular(60),
           child: Image.asset(
             "assets/images/stk.jpg",
-            height: 100,
-            width: 100,
+            height: 250,
+            width: double.infinity,
             fit: BoxFit.cover,
+          ),
+        ),
+        const SizedBox(height: 20),
+
+        // Paragraphe de texte
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            "Mombamomba azy: Fikambanana kristianina ao amin'ny FJKM Ambohitsoa Fibebahana, ahitana tanora manolo-tena hanompo an’Andriamanitra.",
+            style: TextStyle(fontSize: 16),
+            textAlign: TextAlign.left,
           ),
         ),
       ],
     );
   }
 
+
   Widget _buildParastk() {
     return const Padding(
       padding: EdgeInsets.only(top: 10),
       child: Text(
-        "Manana ny fototra hijoroany manokana ny STK AMFI: .........",
+        "Fototra ijoroany: Miorina amin’ny finoana kristianina, amin’ny alalan’ny Tenin’Andriamanitra, vavaka, ary fanompoana.",
         style: TextStyle(fontStyle: FontStyle.normal, color: Colors.black, fontSize: 16),
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.left,
       ),
 
     );
@@ -142,16 +139,25 @@ class PageAPROPOS extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            "Raha maniry ny hifandray mivantana amin'ny birao STK AMFI:",
+            "Tanjona kendrena: Hampiroborobo ny fiainam-panahy sy fanompoam-piangonana eo amin’ny tanora, ho vavolombelona velona amin’ny fiaraha-monina.",
             style: TextStyle(
               color: Colors.black,
               fontSize: 16,
             ),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.left,
           ),
           const SizedBox(height: 12),
           const Text(
-            "Raha maniry ny hifandray mivantana amin'ny birao STK AMFI:",
+            "Misy sokajin'asa maro ao @ STK AMFI: Hira, Vakodrazana, Sports, ary misokatra ho an'izay rehetra mampandroso ny asan'Andriamanitra.",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 16,
+            ),
+            textAlign: TextAlign.left,
+          ),
+          const SizedBox(height: 12),
+          const Text(
+            "Raha maniry ny hifandray mivantana amin'ny birao STK AMFI dia afaka mifanerasera aminao izahay:",
             style: TextStyle(
               color: Colors.black,
               fontSize: 16,
@@ -177,7 +183,7 @@ class PageAPROPOS extends StatelessWidget {
               IconButton(
                 icon: const Icon(Icons.facebook, color: Colors.blue),
                 onPressed: () async {
-                  final Uri uri = Uri.parse('https://web.facebook.com/miandry.randrianarimanana');
+                  final Uri uri = Uri.parse('https://www.facebook.com/stkambohitsoa.fibebahana');
                   if (await canLaunchUrl(uri)) {
                     await launchUrl(uri);
                   }
@@ -220,11 +226,11 @@ class PageAPROPOS extends StatelessWidget {
               SizedBox(height: 8),
               Text(
                 " - Miandrivola fanomezantsoa",
-                style: TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 15),
               ),
               SizedBox(height: 8),
               Text(
-                " - Mpikambana, mpandrindra sokajin'asa vakodrazana",
+                " - Mpikambana ao amin'ny STK AMFI",
                 style: TextStyle(fontSize: 16),
               ),
             ],
@@ -252,7 +258,7 @@ class PageAPROPOS extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.only(top: 10),
       child: Text(
-        "Le succée n'est final, l'échec n'est fatel: c'est le courage de continué qui compte.",
+        "Le succès n’est pas final, l’échec n’est pas fatal : c’est le courage de continuer qui compte.",
         style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey, fontSize: 16),
         textAlign: TextAlign.center,
       ),

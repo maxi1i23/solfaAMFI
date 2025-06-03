@@ -36,14 +36,63 @@ flutter:
     - assets/images/ensemble.jpeg
     - assets/images/mena.jpg
     - assets/images/mi.png
+     #amfi
+    - assets/pdf/afo.pdf
+    - assets/pdf/aleloiasyvoninahitra.pdf
+    - assets/pdf/ampiozahay.pdf
+    - assets/pdf/atambatray.pdf
+    - assets/pdf/diavonona.pdf
+    - assets/pdf/dienymbola.pdf
+    - assets/pdf/diovy.pdf
+    - assets/pdf/fanahyo.pdf
     - assets/pdf/fihavanana.pdf
-    - assets/pdf/doc2.pdf
-    - assets/pdf/doc3.pdf
-    - assets/pdf/azoantoka.pdf
-    - assets/pdf/manaiky.pdf
-    - assets/pdf/aminaotanora.pdf
+    - assets/pdf/hifamela.pdf
+    - assets/pdf/hirafaneva.pdf
+    - assets/pdf/hiverina.pdf
+    - assets/pdf/hoanao.pdf
+    - assets/pdf/hoavy.pdf
+    - assets/pdf/iesuamasia.pdf
+    - assets/pdf/jesoanomanafaka.pdf
+    - assets/pdf/mandehana.pdf
+    - assets/pdf/mbolahitsangana.pdf
+    - assets/pdf/mifohaza.pdf
+    - assets/pdf/Mitsaokaanao.pdf
+    - assets/pdf/nohonyamiko.pdf
+    - assets/pdf/nyantsony.pdf
+    - assets/pdf/omeovoninahitra.pdf
+    - assets/pdf/tsytoizao.pdf
+    - assets/pdf/zavapoana.pdf
+    #autre
+    - assets/pdf/azoatoka.pdf
     - assets/pdf/fiainambaovao.pdf
+    - assets/pdf/manaiky.pdf
+    - assets/pdf/Natsiky.pdf
+    - assets/pdf/omeo fo mino.pdf
+    #sp
+    - assets/pdf/akaikinao.pdf
+    - assets/pdf/aminaotanora.pdf
+    - assets/pdf/aminaojehova.pdf
+    - assets/pdf/ampianaroahotompo.pdf
+    - assets/pdf/ampidinoeto.pdf
+    - assets/pdf/derahoanao.pdf
+    - assets/pdf/fahahazohery.pdf
+    - assets/pdf/fiainandanitra.pdf
     - assets/pdf/fianarana.pdf
+    - assets/pdf/fiainambaovao.pdf
+    - assets/pdf/haleloya.pdf
+    - assets/pdf/hianaojevoha.pdf
+    - assets/pdf/ityfirenenaity.pdf
+    - assets/pdf/izanoahy.pdf
+    - assets/pdf/izaymatoky.pdf
+    - assets/pdf/kantoindrindra.pdf
+    - assets/pdf/koa mitsangana.pdf
+    - assets/pdf/masoandronay.pdf
     - assets/pdf/mitafia.pdf
+    - assets/pdf/mitsangana.pdf
+    - assets/pdf/nyantsonysp.pdf
+    - assets/pdf/nyteninaojesoa.pdf
+    - assets/pdf/omeovoninahitrasp.pdf
+    - assets/pdf/satriatanora.pdf
     - assets/pdf/tanoratanindrazanao.pdf
     - assets/pdf/tenaaina.pdf
+

@@ -13,9 +13,15 @@ class PageAUTRE extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const SizedBox(height: 12),
-            _buildPdfButton(context, "1: Azo antoka", "assets/pdf/azoantoka.pdf"),
+            _buildPdfButton(context, "Azo antoka", "assets/pdf/azoatoka.pdf"),
             const SizedBox(height: 12),
-            _buildPdfButton(context, "2: Manaiky aho", "assets/pdf/manaiky.pdf"),
+            _buildPdfButton(context, "Fiainam-bahovao", "assets/pdf/fiainambaovao.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "Manaiky aho", "assets/pdf/manaiky.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "Na tsiky na tomany", "assets/pdf/Natsiky.pdf"),
+            const SizedBox(height: 12),
+            _buildPdfButton(context, "Omeo fo mino", "assets/pdf/omeo fo mino.pdf"),
             const SizedBox(height: 12),
 
           ],

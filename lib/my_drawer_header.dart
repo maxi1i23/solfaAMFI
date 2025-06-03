@@ -24,11 +24,11 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage('assets/images/stk.jpg'),
+                image: AssetImage('assets/icon/icon.png'),
               ),
             ),
           ),
-          Text("STK AMFI", style: TextStyle(color: Colors.red,fontSize: 30),),
+          Text("Solfa AMFI", style: TextStyle(color: Colors.red,fontSize: 30),),
           //Text("@miandry", style: TextStyle(color: Colors.cyan,fontSize: 10),),
         ],
       ),
